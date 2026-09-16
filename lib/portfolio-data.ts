@@ -22,8 +22,8 @@ export const IDENTITY = {
 } as const;
 
 export const SOCIALS = {
-  github: "https://github.com/haythem-adnani",
-  linkedin: "https://www.linkedin.com/in/haythem-adnani",
+  github: "https://github.com/Adnani-Haythem",
+  linkedin: "https://www.linkedin.com/in/haythem-adnani-11139835a/",
   email: "haythem.adnani@etudiant-enit.utm.tn",
   phone: "+216 94 320 099",
   phoneHref: "tel:+21694320099",
