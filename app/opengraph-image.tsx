@@ -9,11 +9,10 @@ export default async function OgImage() {
   return new ImageResponse(
     (
       <div style={{ width: "1200px", height: "630px", background: "#0d0f14", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "72px", fontFamily: "sans-serif", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(rgba(105,183,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(105,183,255,0.06) 1px, transparent 1px)", backgroundSize: "56px 56px", display: "flex" }} />
         <div style={{ position: "absolute", top: "-140px", right: "-80px", width: "520px", height: "520px", borderRadius: "50%", background: "rgba(105,183,255,0.14)", display: "flex" }} />
 
         <div style={{ display: "flex", flexDirection: "column", gap: "18px", zIndex: 1 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "10px", border: "1px solid rgba(105,183,255,0.28)", borderRadius: "999px", padding: "9px 18px", width: "fit-content", color: "#94b8d4", fontSize: "18px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "10px", border: "1px solid rgba(105,183,255,0.28)", borderRadius: "999px", padding: "9px 18px", alignSelf: "flex-start", color: "#94b8d4", fontSize: "18px" }}>
             <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#69b7ff", display: "flex" }} />
             Cybersecurity · AI · Software Engineering
           </div>
