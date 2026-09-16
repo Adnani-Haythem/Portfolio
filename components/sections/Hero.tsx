@@ -142,22 +142,22 @@ export function Hero() {
               animate={{ rotateX: tilt.x, rotateY: tilt.y }}
               transition={{ type: "spring", stiffness: 120, damping: 18 }}
               style={{ transformPerspective: 900 }}
-              className="relative w-[clamp(250px,32vw,440px)]"
+              className="relative w-[clamp(250px,28vw,360px)]"
             >
-              {/* backlight glow, shows through the cutout's soft edges */}
+              {/* soft backlight around the portrait frame */}
               <div
                 aria-hidden
                 className="absolute inset-x-[-15%] inset-y-[-10%] -z-10 rounded-[45%] bg-[radial-gradient(ellipse,rgba(105,183,255,0.24),transparent_68%)] blur-2xl"
               />
-              {/* true alpha cutout — no crop box, shape-aware shadow + rim glow via drop-shadow */}
+              {/* Preserve the photo's portrait proportions at every screen size. */}
               <Image
                 src={PORTRAIT.current}
                 alt={PORTRAIT.alt}
-                width={872}
-                height={749}
+                width={1122}
+                height={1402}
                 priority
-                sizes="(max-width:640px) 65vw, 440px"
-                className="relative h-auto w-full select-none drop-shadow-[0_35px_50px_rgba(0,0,0,0.65)] [filter:drop-shadow(0_35px_50px_rgba(0,0,0,0.65))_drop-shadow(-10px_0_28px_rgba(105,183,255,0.28))_drop-shadow(10px_0_28px_rgba(140,207,255,0.16))]"
+                sizes="(max-width:892px) 250px, (max-width:1285px) 28vw, 360px"
+                className="relative h-auto w-full select-none rounded-[2rem] border border-paper/20 shadow-[0_25px_65px_rgba(0,0,0,0.5)]"
               />
 
               {/* metallic ring platform — absolutely positioned so its

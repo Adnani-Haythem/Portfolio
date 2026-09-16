@@ -31,7 +31,7 @@ export const SOCIALS = {
 } as const;
 
 export const PORTRAIT = {
-  current: "/assets/haythem-placeholder.svg",
+  current: "/assets/haythem-adnani-portrait.png",
   alt: "Haythem Adnani",
 } as const;
 

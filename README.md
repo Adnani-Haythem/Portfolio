@@ -32,10 +32,10 @@ The current CV is stored at:
 public/assets/haythem-adnani-resume.pdf
 ```
 
-Replace the placeholder portrait at:
+The hero portrait is stored at:
 
 ```text
-public/assets/haythem-placeholder.svg
+public/assets/haythem-adnani-portrait.png
 ```
 
 and update `PORTRAIT.current` in `lib/portfolio-data.ts` if you use another filename.
